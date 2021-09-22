@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
-
+.full-container{
+    width: 100%;
+    height: 100vh;
+}
 .up-general-container{
     width: 100%;
-    height: 90vh;
+    height: 90%;
     /* border: 3px solid red; */
     display: flex;
 }
@@ -14,10 +18,10 @@ ul{
     list-style: none;
     text-align: center;
 }
-/* a{
-    text-decoration: none;
-    /* color: black;
- } */
+.text-gray{
+    color: #7B7E82;
+}
+
 .invert-color{
     filter: invert(1);
 }
@@ -94,6 +98,7 @@ aside .aside-top-container{
     /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 .up-upgrade-container,
@@ -105,7 +110,7 @@ aside .aside-top-container{
         /* UPGRADE */
 /* ************************ */
 .up-upgrade-container{
-    background-color: black;
+    background-color: #080B12;
     text-align: right;
 }
 .up-upgrade-container .button {
@@ -131,16 +136,16 @@ aside .aside-top-container{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: space-around;
-    background-color: black;
+    justify-content: center;
+    background-color: #141922;
     color: white;
     font-size: 10px;
-
 }
 
 .section-title{
     width: calc(100% / 4);
     height: 30px;
+    line-height: 30px;
 }
 
 /* ************************ */
@@ -150,14 +155,17 @@ aside .aside-top-container{
 
 .up-music-options-container{
     width: 100%;
+    background-color: #141922;
     /* border: 2px solid green; */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding: 0 10px;
 }
 .music-options-title{
-    width: 30%;
-    height: 50px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
     /* border: 3px solid orange; */
 }
 .album-general-container{
@@ -166,18 +174,39 @@ aside .aside-top-container{
     /* border: 3px solid orange;  */
     display: flex;
     flex-wrap: wrap;
-    overflow: auto;
+    flex-shrink: 1;
 }
 .box{
     width: 50%;
-    min-height: 50%;
-    /* border: 2px solid violet; */
+    min-height: 150px;
+    border: 2px solid violet;
     flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+.box img{
+    width: 100%;
+    object-fit: contain;
+}
+.box-text-container{
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+.box-title{
+    font-size: 12px;
+    padding-bottom: 5px;
+    font-weight:800;
+}
+.box-subtitle{
+    font-size: 8px;
+    font-weight: 800;
 }
 /* ******************************************************* */
 .bottom-bar{
     width: 100%;
-    height: 60pc;
+    height: 10%;
     /* border: 3px solid red; */
     display: flex;
 }
