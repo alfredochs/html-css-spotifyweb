@@ -224,7 +224,7 @@ aside .aside-top-container{
     background-color: #282828;
 }
 .bottom-left{
-    width: 30%;
+    width: 25%;
     /* border:1px solid white; */
     align-items: center;
     display: flex;
@@ -244,7 +244,72 @@ aside .aside-top-container{
     padding-right: 10px;
 }
 .bottom-left-icons{
-    padding-right: 25px;
+    padding-right: 20px;
     font-size: 11px;
 }
 /* LEFT END */
+/* MIDDLE */
+.bottom-middle{
+    flex-grow: 1;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+.bottom-middle-buttons{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    align-items: center;
+    height: 60%;
+}
+.play-button{
+    font-size: 25px;
+}
+
+.bottom-middle-time{
+    /* border: 1px solid white; */
+    display: flex;
+    color: white;
+    font-size: 8px;
+    justify-content: space-evenly;
+}
+.time-bar-container{
+    display: flex;
+    align-items: center;
+    /* flex-grow: 1; */
+
+}
+.time-bar{
+    width: 120px;
+    border-bottom: 5px solid gray;
+    margin: auto;
+    border-radius: 3px;
+}
+/* MIDDLE END */
+
+
+/* RIGHT */
+.bottom-right{
+    width: 25%;
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 10px;
+    justify-content: center;
+}
+.bottom-right i{
+    padding: 0 2px;
+}
+.volume-bar{
+    width: 50px;
+    border-bottom: 5px solid gray;
+    margin: auto;
+    border-radius: 3px;
+    gap: 5px;
+    padding-right: 5px;
+    flex-grow: 1;
+}
+/* RIGHT END */
+
