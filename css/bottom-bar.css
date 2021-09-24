@@ -51,8 +51,7 @@
 /* LEFT END */
 /* MIDDLE */
 .bottom-middle{
-    flex-grow: 1;
-    /* text-align: center; */
+    width: 50%;
 
 }
 .bottom-middle-internal-container{
@@ -65,10 +64,10 @@
     justify-content: center;
     font-size: 12px;
     align-items: center; 
-    height: 60%;
+    /* height: 60%;  */
 }
 .bottom-middle-buttons i{
-    padding:0 20px;
+    padding:0 10px;
 }
 .play-button{
     font-size: 25px;
@@ -86,6 +85,7 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
+    max-width: 200px;
 }
 .time-bar{
     width: 80%;
@@ -104,26 +104,26 @@
     width: 25%;
     display: flex;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
     font-size: 10px;
-    justify-content: center;
+    justify-content: flex-end;
     padding:0 10px;
+    /* border: 1px solid white; */
 }
 .bottom-right i{
     padding: 0 2px;
 }
 .volume-bar-container{
-    display: flex;
-    align-items: center;
     flex-grow: 1;
+    max-width: 150px;
 }
 .volume-bar{
     width: 90%;
     border-bottom: 5px solid gray;
-    margin: auto;
+    /* margin: auto; */
     border-radius: 3px;
-    gap: 5px;
-    padding-right: 5px;
+    /* gap: 5px; */
+    /* padding-right: 5px; */
 }
 /* RIGHT END */
