@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* S */
+@media screen and (min-width: 500px) {
+    aside{
+        width: 200px;
+    }
+
+    aside .aside-top-container span{
+        display: block;
+    }
+    .aside-top-container li:first-child{
+        font-size: 25px;
+        /* padding-left: 10px; */
+        padding-bottom: 20px;
+        color: white;
+    }
+    .aside-top-container li:first-child img{
+        width: 20%;
+    }
+    .aside-top-container img{
+        width: 20%;
+        /* padding-left: 3px; */
+    }
+    .aside-top-container ul li{
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    .aside-top-container ul li span{
+        padding-left: 5px;
+    }
+
+    /* ***** ASIDE CENTER ****** */
+    .aside-center-container .playlist-general-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .aside-center-container{
+        flex-grow: 1;
+        overflow: hidden;
+        display: flex;
+    }
+
+     ul{
+        text-align: left;
+    }
+    .playlist-general-container{
+        padding-left: 15px;
+        font-size: 12px;
+    }
+    .container-playlist-overflow{
+        overflow: auto;
+    }
+    .playlist-title{
+        /* font-size: 12px; */
+        font-weight: bold;
+    }
+    .create-playlist {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+    }
+    .create-playlist-button{
+        width: 35px;
+        height: 35px;
+        background-color: lightgray;
+        margin-right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-plus{
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 5px;
+        color: black;
+    }
+    .aside-center-container ul li{
+        padding: 10px 0;
+    }
+    /* ***** ASIDE CENTER END ****** */
+
+
+    /* ***** ASIDE BOTTOM  ****** */
+    .bottom-internal-container span{
+        display: block;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+    .bottom-internal-container{
+        width: 85%;
+    }
+    .bottom-internal-container .download{
+        border-bottom: 2px solid grey;
+        padding: 5px 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .aside-bottom-container img{
+       width: 15%;
+       margin-left: -3px;
+    }
+    .bottom-internal-container .user{
+        padding: 5px 0;
+        display: flex;
+        justify-content: flex-start
+    }
+
+} 
+/* M */
+
+@media screen and (min-width: 768px){
+    aside{
+        width: 250px;
+    }
+    .box{
+        width: calc(100% / 4 - 8px);
+        max-width: 250px;
+    }
+    .up-general-container{
+        height: calc(100% - 100px);
+    }
+    .up-upgrade-container .button {
+        padding: 30px 10px;
+    }
+    .up-upgrade-container .button a{
+        font-size: 20px;
+    }
+    .bottom-bar{
+        height: 100px;
+    }
+}
+
+/* L */
+

@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/up-right.css">
+    <link rel="stylesheet" href="css/bottom-bar.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Spotify</title>
 </head>
 
@@ -21,7 +24,6 @@
         <div class="up-general-container">
 
             <aside>
-                <!-- <div class="aside-internal-container"> -->
                 <div class="aside-top-container">
                     <ul>
                         <li class="text-gray"><img class="invert-color" src="img/favicon.ico"
@@ -32,37 +34,47 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="aside-center-container">
                     <div class="playlist-general-container">
-                        <span class="playlist-title">PLAYLIST</span>
+
+                        <div class="playlist-title">PLAYLIST</div>
                         <div class="create-playlist">
                             <div class="create-playlist-button">
                                 <span class="button-plus"><i class="fas fa-plus"></i></span>
                             </div>
                             <span class="text-gray">Crea Playlist</span>
                         </div>
-                        <ul>
-                            <li class="text-gray">Nome Playlist</li>
-                            <li class="text-gray">Nome Playlist</li>
-                            <li class="text-gray">Nome Playlist</li>
-                            <li class="text-gray">Nome Playlist</li>
-                            <li class="text-gray">Nome Playlist</li>
-                            <li class="text-gray">Nome Playlist</li>
-                            <li class="text-gray">Nome Playlist</li>
-                        </ul>
+
+                        <div class="playlist-ul-container">
+                            <ul class="text-gray">
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="aside-bottom-container">
+                    <div class="bottom-internal-container">
+
+                        <div class="download">
+                            <img src="img/download.svg" alt="logo">
+                            <span>Installa App</span>
+                        </div>
+
+                        <div class="user">
+                            <div class="user-container"><i class="far fa-user"></i></div>
+                            <span class="user-name">John Doe</span>
+                        </div>
 
                     </div>
                 </div>
-                <div class="aside-bottom-container">
-                    <ul>
-                        <li class="text-gray"><img src="img/download.svg" alt="logo">Installa app</li>
-                        <li>
-                            <div class="user-container"><i class="far fa-user"></i></div>
-                            <span>John Doe</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- </div> -->
             </aside>
 
             <div class="up-right-container">
@@ -73,7 +85,7 @@
                 </div>
 
                 <div class="up-sections-container">
-                    <div class="section-title">IN EVIDENZA</div>
+                    <div class="section-title clearfix">IN EVIDENZA</div>
                     <div class="section-title">PODCAST</div>
                     <div class="section-title">CLASSIFICHE</div>
                     <div class="section-title">GENERI E MOOD</div>
