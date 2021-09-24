@@ -92,7 +92,18 @@
     border-bottom: 5px solid gray;
     margin: auto;
     border-radius: 3px;
+    position: relative;
 }
+.bottom-middle-time .time-bar::after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    left: 0;
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
 .time-count{
     padding: 0 5px;
 }
@@ -121,9 +132,32 @@
 .volume-bar{
     width: 90%;
     border-bottom: 5px solid gray;
-    /* margin: auto; */
     border-radius: 3px;
-    /* gap: 5px; */
-    /* padding-right: 5px; */
+    position: relative;
+}
+.bottom-right .volume-bar::after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    left: 0;
+    background-color: lightgray;
+    border-radius: 3px;
 }
 /* RIGHT END */
+/* **************************************************************** */
+.bottom-left .bottom-left-text-subtitles span:hover{
+    color: white;
+    text-decoration: underline;
+}
+.bottom-left-icons i:hover{
+    color: white;
+}
+.play-button:hover{
+    transform: scale(1.2);
+}
+
+.time-bar:hover::after,
+.volume-bar:hover::after{
+    background-color: #ADFF2F;
+}

@@ -107,4 +107,9 @@ aside .aside-top-container{
 /* ************************ */
 
 
-
+.aside-top-container ul li:hover,
+.aside-center-container span:hover,
+.aside-center-container ul li:hover,
+.aside-bottom-container span:hover{
+    color: white;
+}

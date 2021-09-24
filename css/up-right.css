@@ -29,7 +29,7 @@
     text-align: right;
 }
 .up-upgrade-container .button {
-    padding: 25px 5px;
+    padding: 25px 25px;
 }
 .up-upgrade-container .button a{
     color: white;
@@ -38,6 +38,7 @@
     border-radius: 20px;
     text-decoration: none;
     font-size: 10px;
+    display: inline-block;
 }
 /* ************************ */
         /* FINE UPGRADE */
@@ -49,7 +50,7 @@
 .up-sections-container{
     text-align: center;
     background-color: #141922;
-    color: white;
+    color: gray;
     font-size: 10px;
 }
 
@@ -129,3 +130,12 @@
 /* ************************ */
         /* Fine Album */
 /* ************************ */
+
+/* ANIMATIONS */
+.up-sections-container a:hover{
+    color: white;
+    font-weight: bold;
+}
+.button:hover a{
+    transform: scale(1.3);
+}
