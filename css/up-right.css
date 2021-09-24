@@ -136,7 +136,23 @@
     background-color: rgba(0,0,0,.6);
     border-radius: 50%;
 }
+.box .play{
+    display: none;
+}
+.box a {
+    text-decoration: none;
+    color: white;
+}
+.box:hover .play{
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    
 
+
+}
 
 .box-text-container{
     padding-top: 8px;
