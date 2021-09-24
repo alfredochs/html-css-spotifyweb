@@ -107,10 +107,37 @@
     text-align: center;
     width: calc(100% / 2 - 4px);
 }
+
 .box img{
     width: 100%;
     object-fit: contain;
+    display: block;
 }
+.box .box-image-container {
+    position: relative;
+}
+
+.box:hover .box-image-container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.box.artisti:hover .box-image-container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 50%;
+}
+
+
 .box-text-container{
     padding-top: 8px;
     padding-bottom: 15px;
@@ -139,3 +166,4 @@
 .button:hover a{
     transform: scale(1.3);
 }
+

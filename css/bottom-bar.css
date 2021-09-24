@@ -94,7 +94,7 @@
     border-radius: 3px;
     position: relative;
 }
-.bottom-middle-time .time-bar::after{
+.time-bar::before{
     content: '';
     position: absolute;
     width: 30%;
@@ -135,7 +135,7 @@
     border-radius: 3px;
     position: relative;
 }
-.bottom-right .volume-bar::after{
+.bottom-right .volume-bar::before{
     content: '';
     position: absolute;
     width: 30%;
@@ -157,7 +157,18 @@
     transform: scale(1.2);
 }
 
+.time-bar:hover::before,
+.volume-bar:hover::before{
+    background-color: #ADFF2F;
+}
 .time-bar:hover::after,
 .volume-bar:hover::after{
-    background-color: #ADFF2F;
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    bottom: -10px;
+    left: calc(30% - 7px);
 }
