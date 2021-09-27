@@ -39,6 +39,7 @@
     text-decoration: none;
     font-size: 10px;
     display: inline-block;
+    transition: 0.3s;
 }
 /* ************************ */
         /* FINE UPGRADE */
@@ -179,7 +180,7 @@
     color: white;
     font-weight: bold;
 }
-.button:hover a{
+.button a:hover {
     transform: scale(1.3);
 }
 

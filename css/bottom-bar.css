@@ -71,6 +71,7 @@
 }
 .play-button{
     font-size: 25px;
+    transition: .3s;
 }
 
 .bottom-middle-time{
